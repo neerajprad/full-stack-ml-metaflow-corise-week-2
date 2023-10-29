@@ -172,7 +172,7 @@ class BaselineChallenge(FlowSpec):
 
         # TODO: Append the matplotlib fig to the card
         # Docs: https://docs.metaflow.org/metaflow/visualizing-results/easy-custom-reports-with-card-components#showing-plots
-
+        current.card.append(Image.from_matplotlib(fig))
         self.next(self.end)
 
     @step
